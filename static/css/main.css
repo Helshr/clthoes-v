@@ -1,0 +1,136 @@
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}
+.noscroll body {
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: center;  
+}
+
+.back-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-submit {
+    position: relative;
+    top: 25rem;
+}
+
+.input-num {
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 0.5em;
+    border: 2px solid black;
+    font-size: larger;
+}
+
+.input-btn {
+    position: relative;
+    left: 3rem;
+    border: 1px solid black;
+    background-color: black;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5em;
+}
+
+ul > li {
+    list-style: none;
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    border: 1px solid black;
+}
+
+.bottom-show {
+    width: 8rem;
+    height: 8rem;
+}
+
+#div-show-clothes {
+    position: relative;
+    display: flex;
+}
+
+#div-show-backClothes {
+    position: relative;
+    display: flex;
+}
+
+.img-show-backClothes {
+    margin-left: 1.6rem;
+    width: 16rem;
+    height: 15rem;
+    padding-top: 1rem;
+}
+
+.img-show-clothes {
+    margin-left: 1.6rem;
+    width: 16rem;
+    height: 15rem;
+    padding-top: 1rem;
+}
+
+.show-upload {
+    position: absolute;
+}
+
+#div2 {
+    height: 4rem;
+    z-index: 10;
+}
+
+.upload-font {
+    /*display: block;*/
+    position: fixed;
+    /*width: 5rem;*/
+    z-index: 11;
+    font-family: sans-serif;
+    top: 7rem;
+    left: 10rem;
+}
+
+#upload-image {
+    /*opacity: 0;*/
+    /*-ms-filter: 'alpha(opacity=0)';*/
+    border:3px solid black;
+    height: 2rem;
+    border-radius: 0.5em;
+    margin-left: auto;
+}
+
+#upload-choose-img {
+    bordder: 2px solid black;
+}
+
+.submit-message {
+    display: inline-grid;
+    margin-top: 25rem;
+    height: 5rem;
+    width: 13rem;
+    border: 3px solid black;
+    border-radius: 0.5em;
+}
+
+.show-final-message {
+    margin-top: 20rem;
+}
+
+.add-font-btn {
+    background-color: black;
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.font-value {
+    border: 2px solid black;
+    height: 1.5rem;
+}

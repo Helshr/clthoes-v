@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="noscroll">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="../static/css?file=main.css">
+    <title>DIY Clothes</title>
+
+</head>
+<body>
+    <div id="content">
+        <div id="div-show-clothes">
+            <img class="img-show-clothes" src="../static/img?file=white.png">
+        </div>
+        <div id="div-show-backClothes">
+            <img class="img-show-backClothes" src="../static/img?file=white-back.png">
+        </div>
+        <div id="div-utils-clothes">
+            <!-- 颜色选择功能 -->
+            <ul class="ul-color-list">
+                <li style="background-color:rgb(0, 0, 0)" data-colorid="black"></li>
+                <li style="background-color:rgb(256, 256, 256)" data-colorid="white"></li>
+                <li style="background-color:#ff0000" data-colorid="red"></li>
+                <li style="background-color:yellow" data-colorid="yellow"></li>
+                <li style="background-color:green" data-colorid="green"></li>
+                <li style="background-color:grey" data-colorid="grey"></li>
+            </ul>
+        </div>
+        <div id="upload-choose-img">
+            <input id="upload-image" type="file" name="image" accept="image/*"/>
+        </div>
+        <div id="write-font">
+            <input type="text" class="font-value">
+            <button class="add-font-btn"><font color="white">添加文字</font></button>
+        </div>
+        <div id="show-upload-font">
+
+        </div>
+        <a href="/submit-message">提交信息</a>
+    </div>
+    <script src="../static/js?file=main.js"></script>
+    <script src="../static/js?file=drag.js"></script>
+    <script src="../static/js?file=upload.js"></script>
+    <script src="../static/js?file=writeFont.js"></script>
+</body>
+</html>
