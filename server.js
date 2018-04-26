@@ -139,9 +139,11 @@ const run = (host='', port=3000) => {
 
 // 程序的入口
 const __main = () => {
-    run('127.0.0.1', 5000)
+    run('0.0.0.0', 4000)
 }
 
 // 调用 main 函数
-__main()
+if (require.main === module) {
+    __main()
+}
 
