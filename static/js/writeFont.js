@@ -1,4 +1,4 @@
-const addFontBut = e('.add-font')
+const addFontBut = e('.add-font-btn')
 
 // 找到添加文字按钮，并添加事件
 addFontBut.addEventListener('click', () => {
