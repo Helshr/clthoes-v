@@ -20,7 +20,7 @@
 
 .form-submit {
     position: relative;
-    top: 22rem;
+    top: 18rem;
 }
 
 .input-num {
@@ -115,7 +115,7 @@ ul > li {
 
 .submit-message {
     display: inline-grid;
-    margin-top: 22rem;
+    margin-top: 18rem;
     height: 5rem;
     width: 13rem;
     border: 3px solid black;
