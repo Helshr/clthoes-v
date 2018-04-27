@@ -74,7 +74,7 @@ const admin = (request) => {
     ca = Customers.all()
     let s = ''
     for (let i = 0; i < ca.length; i++) {
-        s += `<h2>电话号：${ca[i].phoneNumbers} 订单数量：${ca[i].clothesNumbers}</h2>`
+        s += `<h1>电话号：${ca[i].phoneNumbers} 订单数量：${ca[i].clothesNumbers}</h1>`
     }
 
     const header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
