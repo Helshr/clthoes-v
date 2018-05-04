@@ -107,10 +107,15 @@ ul > li {
     margin-left: auto;
     margin-left: 5rem;
     width: 11rem;
+
+    display: none;
+    visibility: hidden;
 }
 
 #upload-choose-img {
-    bordder: 2px solid black;
+    border: 2px solid black;
+    color: aliceblue;
+    background-color: black;
 }
 
 .submit-message {
@@ -142,3 +147,26 @@ ul > li {
     position: absolute;
     margin-top: 2.5rem;
 }
+
+.submit-message-btn {
+    text-align: center;
+    background-color: black;
+}
+
+div#upload-choose-img {
+    text-align: center;
+}
+
+div#write-font {
+    text-align: center;
+    background-color: black;
+}
+
+#div-utils-clothes {
+    display: inline-table;
+    margin-left: 2rem;
+}
+
+a{color:white} /*设置默认颜色*/
+a:link {color:white;} /*未访问颜色*/
+a:visited {color:white;} /*已访问颜色*/
