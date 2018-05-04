@@ -101,21 +101,15 @@ ul > li {
 #upload-image {
     /*opacity: 0;*/
     /*-ms-filter: 'alpha(opacity=0)';*/
-    border:3px solid black;
-    height: 2rem;
-    border-radius: 0.5em;
-    margin-left: auto;
-    margin-left: 5rem;
-    width: 11rem;
+    height: 1.5rem;
 
-    display: none;
-    visibility: hidden;
+    /*display: none;*/
+    /*visibility: hidden;*/
+
 }
 
 #upload-choose-img {
     border: 2px solid black;
-    color: aliceblue;
-    background-color: black;
 }
 
 .submit-message {
