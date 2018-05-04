@@ -28,9 +28,9 @@
                 <li style="background-color:grey" data-colorid="grey"></li>
             </ul>
         </div>
-        <div class="add-logo-font">添加Logo:</div>
         <div id="upload-choose-img">
-            <input id="upload-image" type="file" name="image" accept="image/*"/>
+            <input id="upload-image" type="file" name="file" accept="image/*"/>
+            <label for="upload-image">Choose a Logo</label>
         </div>
         <div id="write-font">
             <input type="text" class="font-value">
@@ -39,7 +39,9 @@
         <div id="show-upload-font">
 
         </div>
-        <a href="/submit-message">提交信息</a>
+        <div class="submit-message-btn">
+            <a href="/submit-message">提交信息</a>
+        </div>
     </div>
     <script src="../static/js?file=main.js"></script>
     <script src="../static/js?file=drag.js"></script>
