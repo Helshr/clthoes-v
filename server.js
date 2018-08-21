@@ -1,9 +1,8 @@
 // 引入内置模块, 会在下面用到
 const net = require('net')
-const fs = require('fs')
-const multiparty = require('multiparty')
 const http = require('http')
 
+const fs = require('fs')
 
 // 引入自定义模块
 // Request 是 封装了请求的类
