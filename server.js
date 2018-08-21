@@ -27,14 +27,6 @@ const error = (code=404) => {
 // /message?content=hello&author=gua
 // 返回包含 path 和 query 的 object
 const parsedPath = (path) => {
-    /*
-     * content=hello&author=gua
-     * {
-     *     'message': 'hello',
-     *     'author': 'gua',
-     * }
-     */
-    // 先判断 path 中是否包含 ?
     const index = path.indexOf('?')
     // 如果不包含 ?, query 是一个空对象
     if (index === -1) {
@@ -46,7 +38,6 @@ const parsedPath = (path) => {
         // 如果包含 ?, 则按照 ? 将请求中的 path 分成 path 和 query
         const l = path.split('?')
         path = l[0]
-
         // 下面这部分的作用是解析 query
         // query 的格式为 a=b&c=d&e=f
         const search = l[1]
@@ -111,14 +102,11 @@ const run = (host='', port=3000) => {
             // 使用 request.raw 保存请求的原始信息
             request.raw = r
             const ip = s.localAddress
-
             // 然后调用 responseFor, 根据 request 生成响应内容
             // 因为除了 path, 还有 method, query, body 都会影响 response 的内容
             const response = responseFor(request)
-
             // 将 response 发送给客户端, 这里的客户端就是浏览器
             // socket.write 可以接收 buffer 类型的参数
-            // 也就是说可以发送文本, 也可以发送像图片这样的二进制信息
             s.write(response)
             // 这里是一个套路, 如果不这么做, 浏览器不知道当前请求是否已经结束
             // 会出现一直等待的情况, 也就是会一直 loading
