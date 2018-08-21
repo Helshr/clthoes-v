@@ -57,16 +57,12 @@ const parsedPath = (path) => {
 const responseFor = (request) => {
     const raw = request.raw
     const raws = raw.split(' ')
-
-    // request 是自定义的对象, 我们使用这个对象来保存请求的相关信息
-    // 比如 method, path, query, body
     request.method = raws[0]
     let pathname = raws[1]
     let { path, query } = parsedPath(pathname)
     request.path = path
     request.query = query
     request.body = raw.split('\r\n\r\n')[1]
-
     // 定义一个基本的 route, 是一个空 object
     const route = {}
     // 然后将引入进来的 routeMapper 与 route 合并
