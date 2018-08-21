@@ -102,15 +102,6 @@ const getCustomMessage = (request) => {
 
 // 接收发送过来的图片, 并保存到文件夹中
 const uploadImg = (request) => {
-    // const form = new multiparty.Form()
-    // form.parse(request, (err, fields, files) => {
-    //     if (err) {
-    //         console.error(err)
-    //     }
-    //     log('fields: ', fields)
-    //     log('files: ', files)
-    // })
-    // log('req: ', request)
     const header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
     const body = template('uploadImg.html')
     const r = header + '\r\n' + body
