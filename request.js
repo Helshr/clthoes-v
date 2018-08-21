@@ -4,13 +4,9 @@ class Request {
         // 默认是 GET 方法
         this.method = 'GET'
         this.path = ''
-        // query 默认是一个 object, 这样使用会更加方便
         this.query = {}
         this.body = ''
     }
-
-    // 一般使用 post 方法提交的数据会放在 request body 中
-    // 封装一个 form 方法, 直接获取解析之后的数据(以 object 的形式)
     form() {
         // 浏览器在发送 form 表单的数据时, 会自动使用 encodeURIComponent 编码
         // 所以拿到 body 的数据之后先解码
