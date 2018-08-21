@@ -1,6 +1,5 @@
 // 引入内置模块, 会在下面用到
 const net = require('net')
-const http = require('http')
 
 const fs = require('fs')
 
