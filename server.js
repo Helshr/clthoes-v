@@ -83,13 +83,11 @@ const responseFor = (request) => {
 const run = (host='', port=3000) => {
     // 创建一个服务器, 这个是套路写法
     const server = new net.Server()
-
     // 开启一个服务器监听连接
     server.listen(port, host, () => {
         const address = server.address()
         log(`listening server at http://${address.address}:${address.port}`)
     })
-
     // 当有新连接建立时, 就会触发 connection 事件
     server.on('connection', (s) => {
         s.on('data', (data) => {
@@ -111,12 +109,10 @@ const run = (host='', port=3000) => {
             s.destroy()
         })
     })
-
     // 服务器出错的时候会触发这个事件, 但是具体什么出错是未知的, 套路写法
     server.on('error', (error) => {
         log('server error', error)
     })
-
     // 当服务器关闭时被触发
     server.on('close', () => {
         log('server closed')
