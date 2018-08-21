@@ -47,9 +47,6 @@ class Model {
         const path = `${classname}.txt`
         return path
     }
-
-    // 获取一个类所有实例的函数
-    // 用法如下: 类名.all()
     static all() {
         // 先获取文件路径
         const path = this.dbPath()
@@ -62,7 +59,11 @@ class Model {
         })
         return ms
     }
-
+    static create(form={}) {
+        const cls = this
+        const instance = new cls(form)
+        return instance
+    }
     save() {
         // 实例方法中的 this 指向的是实例本身, 也就是 new 出来的那个对象
         // this.constructor 是指类
